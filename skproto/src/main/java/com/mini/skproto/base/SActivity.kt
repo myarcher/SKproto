@@ -152,7 +152,7 @@ abstract class SActivity : AppCompatActivity(),BaseHttpListener, ToastCallBackLi
         showToast(this!!, mess, flag, types, obj)
     }
 
-   open  fun <T> getService()(service: Class<T>): T {
+   open  fun <T> getService(service: Class<T>): T {
         return abApplication!!.mBClient!!.create(service)
     }
 
