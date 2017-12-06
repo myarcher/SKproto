@@ -7,28 +7,23 @@ package com.mini.skproto.constance
  */
 
 object BaseContanse {
-    val SHARE_NAME = "infos"
-    val MYTOAST_NO = -2
-    val MYTOAST_ER = -1
-    val PASS_MA = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$"
-    val LOGIN = 1
+    open var SHARE_NAME = "infos"
+    open var MYTOAST_NO = -2
+    open var MYTOAST_ER = -1
+    open var PASS_MA = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$"
+    
+    open var address_ma = "请选择"
+    open var POST = 1
+    open var GET = 2
+    open var UP = 3
+    open var DOWN = 4
+    open var POST_TWO = 5
 
-    var email = ""
+    open var SAVE_PATH = ""
+    open var JPEG_FILE_PREFIX = "IMG_"
+    open var JPEG_FILE_SUFFIX = ".jpg"
 
-    var phone = ""
-    var address_ma = "请选择"
-
-    val POST = 1
-    val GET = 2
-    val UP = 3
-    val DOWN = 4
-    val POST_TWO = 5
-
-    var SAVE_PATH = ""
-    val JPEG_FILE_PREFIX = "IMG_"
-    val JPEG_FILE_SUFFIX = ".jpg"
-
-    val RESULT_PICK_IMAGE = 1
-    val RESULT_TAKE_IMAGE = 2
+    open var RESULT_PICK_IMAGE = 1
+    open var RESULT_TAKE_IMAGE = 2
 
 }

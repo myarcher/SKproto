@@ -46,6 +46,9 @@ class SFlowable {
                     if(build!!.httplistener!=null){
                         build!!.httplistener!!.onFails(build!!,Exception("请求服务器错误"))
                     }
+                    if(build!!.sigle!=null){
+                        build!!.sigle!!.onFails(build!!,Exception("请求服务器错误"))
+                    }
                 }
 
                 override fun onResponse(call: Call<String>?, response: Response<String>?) {
@@ -57,8 +60,10 @@ class SFlowable {
                     if(build!!.httplistener!=null){
                         if(response!!.isSuccessful) {
                             build!!.httplistener!!.onNexts(build!!, response.body()!!)
+                            build!!.sigle!!.onNexts(build!!, response.body()!!)
                         }else{
                             build!!.httplistener!!.onFails(build!!,Exception("请求服务器错误"))
+                            build!!.sigle!!.onFails(build!!,Exception("请求服务器错误"))
                         }
                     }
                 }

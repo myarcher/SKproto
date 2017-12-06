@@ -15,6 +15,7 @@ import retrofit2.Call
 class RequestBuild {
     public var call: Call<String>? = null;
     public var httplistener: SHttpListener? = null
+    public var sigle: SHttpListener? = null
     public var loader: LoadListener? = null
     public var url: String? = null
 
@@ -47,10 +48,14 @@ class RequestBuild {
         this.url = url
         return this
     }
-
+    public fun setBack(sigle: SHttpListener?): RequestBuild {
+        this.sigle = sigle
+        return this
+    }
     companion object {
         fun get(): RequestBuild {
             return RequestBuild()
         }
     }
+    
 }

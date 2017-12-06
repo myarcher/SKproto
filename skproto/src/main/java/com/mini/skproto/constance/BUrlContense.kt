@@ -12,35 +12,35 @@ object BUrlContense {
     //public static final String BASE_JOKE_URL = "http://store.dreameb.com/";//基础接口请求地址
     // public static final String BASE_IMG_URL = "http://store.dreameb.com";//基础接口请求地址
 
-    val BASE_URL = "http://120.77.247.228/dongsd/"
-    val BASE_IMG_URL = "http://120.77.247.228/dongsd"
+   open var BASE_URL = "http://120.77.247.228/dongsd/"
+    open var BASE_IMG_URL = "http://120.77.247.228/dongsd"
 
-    val UNAUTHORIZED = 401
-    val FORBIDDEN = 403
-    val NOT_FOUND = 404
-    val REQUEST_TIMEOUT = 408
-    val INTERNAL_SERVER_ERROR = 500
-    val BAD_GATEWAY = 502
-    val SERVICE_UNAVAILABLE = 503
-    val GATEWAY_TIMEOUT = 504
+    open var UNAUTHORIZED = 401
+    open var FORBIDDEN = 403
+    open var NOT_FOUND = 404
+    open var REQUEST_TIMEOUT = 408
+    open var INTERNAL_SERVER_ERROR = 500
+    open var BAD_GATEWAY = 502
+    open var SERVICE_UNAVAILABLE = 503
+    open var GATEWAY_TIMEOUT = 504
 
-    val kefu_tel = "400-101-5218"
-    val APP_ID = "371"
+    open var kefu_tel = "400-101-5218"
+    open var APP_ID = "371"
     //  public static  final String APP_ID="453";
     /**
      * 未知错误
      */
-    val UNKNOWN = 1000
+    open var UNKNOWN = 1000
     /**
      * 解析错误
      */
-    val PARSE_ERROR = 1001
+    open var PARSE_ERROR = 1001
     /**
      * 网络错误
      */
-    val NETWORD_ERROR = 1002
+    open var NETWORD_ERROR = 1002
     /**
      * 协议出错
      */
-    val HTTP_ERROR = 1003
+    open var HTTP_ERROR = 1003
 }
