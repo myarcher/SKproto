@@ -152,8 +152,8 @@ abstract class SActivity : AppCompatActivity(),BaseHttpListener, ToastCallBackLi
         showToast(this!!, mess, flag, types, obj)
     }
 
-   open fun getBService(): BService {
-        return abApplication!!.mBClient!!.create(BService::class.java)
+   open  fun <T> getService()(service: Class<T>): T {
+        return abApplication!!.mBClient!!.create(service)
     }
 
     override fun beginClick(bean: ToastBean) {
