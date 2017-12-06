@@ -141,11 +141,12 @@ abstract class SActivity : AppCompatActivity(){
         addDisposable(HTTPS(builder))
     }
     
-    fun Https(url: String, call: Call<String>,httpListener:SHttpListener,load:LoadListener) {
+    fun Https(url: String, call: Call<String>,sigle:SHttpListener,httpListener:SHttpListener,load:LoadListener) {
         var build:RequestBuild=RequestBuild.get()
                 .setCall(call)
                 .setHttpListener(httpListener)
                 .setLoadListener(load)
+        .setBack(sigle)
                 .setUrl(url)
         return Https(build)
     }
