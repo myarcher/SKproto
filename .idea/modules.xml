@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SKproto.iml" filepath="$PROJECT_DIR$/SKproto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SKproto-1.2.0.iml" filepath="$PROJECT_DIR$/SKproto-1.2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skproto/skproto.iml" filepath="$PROJECT_DIR$/skproto/skproto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skproto/skproto.iml" filepath="$PROJECT_DIR$/skproto/skproto.iml" />
+    </modules>
+  </component>
+</project>

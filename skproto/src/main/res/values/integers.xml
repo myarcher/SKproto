@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="splash_tv">0x1000</integer>
+    <integer name="main_pager">0x1001</integer>
+    <integer name="main_line">0x1002</integer>
+    <integer name="main_tab">0x1003</integer>
+    <integer name="main_tab1">0x1004</integer>
+    <integer name="main_tab1_img">0x1005</integer>
+    <integer name="main_tab1_tv">0x1006</integer>
+    <integer name="main_tab2">0x1007</integer>
+    <integer name="main_tab2_img">0x1008</integer>
+    <integer name="main_tab2_tv">0x1009</integer>
+    <integer name="main_tab3">0x1010</integer>
+    <integer name="main_tab3_img">0x1011</integer>
+    <integer name="main_tab3_tv">0x1012</integer>
+    <integer name="main_tab4">0x1013</integer>
+    <integer name="main_tab4_img">0x1014</integer>
+    <integer name="main_tab4_tv">0x1015</integer>
+
+
+</resources>
