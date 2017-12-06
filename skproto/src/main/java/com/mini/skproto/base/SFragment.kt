@@ -157,8 +157,9 @@ abstract class SFragment : Fragment, BaseHttpListener, ToastCallBackLister, Load
         }
     }
 
-  open  fun getService(): BService {
-        return abApplication!!.mBClient!!.create(BService::class.java)
+  
+   open  fun <T> getService()(service: Class<T>): T {
+        return abApplication!!.mBClient!!.create(service)
     }
 
     override fun onSuccess(indexs: Int, mess: String, data: Any) {
