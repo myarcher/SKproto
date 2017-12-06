@@ -158,7 +158,7 @@ abstract class SFragment : Fragment, BaseHttpListener, ToastCallBackLister, Load
     }
 
   
-   open  fun <T> getService()(service: Class<T>): T {
+   open  fun <T> getService(service: Class<T>): T {
         return abApplication!!.mBClient!!.create(service)
     }
 
