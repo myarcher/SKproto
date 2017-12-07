@@ -33,7 +33,8 @@ ext {
             xutils_v    : "3.5.0",
             advancedluban_v: "1.3.5",
             glide_v     : "3.7.0",
-            universalimage_v:"1.9.5"
+            universalimage_v:"1.9.5",
+            jackson_module_kotlin_v:"2.9.0"
     ]
 
     dependencies = [
@@ -67,7 +68,8 @@ ext {
             "xutils": "org.xutils:xutils:${dependVersion.xutils_v}",
             "advancedluban": "me.shaohui.advancedluban:library:${dependVersion.advancedluban_v}",
             "glide": "com.github.bumptech.glide:glide:${dependVersion.glide_v}",
-            "universalimage":"compile 'com.nostra13.universalimageloader:universal-image-loader:${dependVersion.universalimage_v}"
+            "universalimage":"compile 'com.nostra13.universalimageloader:universal-image-loader:${dependVersion.universalimage_v}",
+            "jackson_module_kotlin":"com.fasterxml.jackson.module:jackson-module-kotlin:${dependVersion.jackson_module_kotlin_v}"
          ]
 
 }
